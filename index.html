@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+
+	<!-- TOP PANEL -->
+	<div class="panel">
+		<div class="level">
+			<h4>Level</h4>
+			<span class="level-number">0</span>
+		</div>
+		
+		<div class="lives">
+			<h4>You sitll have...</h4>
+			<div id="lives_container"></div>
+		</div>
+
+		<div class="score">
+			<h4>Score</h4>
+			<span class="points">0</span>
+		</div>
+	</div>
+	<!-- /TOP PANEL -->
+
+	
+	<!-- CANVAS -->
+	<div id="canvas_container">
+	</div>
+	<!-- /CANVAS -->
+
+
+	
+	
+
+	<!-- OVER SCREEN -->
+	<div id="gameOverScreen" class="modal-container game-over">
+        <div class="modal">
+            <h2>Game Over</h2>
+			<h3>Final Score</h4>
+			<p><span class="points-finalScore">0</span></p>
+			<h3>Level</h4>
+			<p><span class="points-level">0</span></p>
+            <input id="playAgain" type="button" class="button" value="Play Again">
+        </div>
+    </div>
+	<!-- /OVER SCREEN -->
+
+
+	
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
